@@ -1,0 +1,544 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TypingTest.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\TypingTest.ico"
+IDR_TYPINGTYPE          ICON    DISCARDABLE     "res\\TypingTestDoc.ico"
+IDI_KEY                 ICON    DISCARDABLE     "res\\Key manager.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_TEST_CHINESE
+    BUTTON      ID_TEST_ENGLISH
+    BUTTON      ID_USER_CREATE
+    BUTTON      ID_USER_DEL
+    BUTTON      ID_CHANGE_KEY
+    BUTTON      ID_SCORE_PERSONAL
+    BUTTON      ID_SCORE_UNION
+    BUTTON      ID_USER_LOGOUT
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_APP_EXIT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "测试(&T)"
+    BEGIN
+        MENUITEM "英文测试\tCtrl+E",            ID_TEST_ENGLISH
+        MENUITEM "中文测试\tCtrl+C",            ID_TEST_CHINESE
+        MENUITEM "停止测试\tCtrl+S",            ID_TEST_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "退出\tCtrl+X",                ID_APP_EXIT
+    END
+    POPUP "用户(&U)"
+    BEGIN
+        MENUITEM "建立超级用户\tCtrl+N",        ID_USER_CREATE
+        MENUITEM "修改密码\tCtrl+K",            ID_CHANGE_KEY
+        MENUITEM "注销当前用户\tCtrl+L",        ID_USER_LOGOUT
+        MENUITEM SEPARATOR
+        MENUITEM "删除用户\tCtrl+D",            ID_USER_DEL
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "成绩查詢(S)"
+    BEGIN
+        MENUITEM "个人成绩",                    ID_SCORE_PERSONAL
+        MENUITEM "团体成绩",                    ID_SCORE_UNION
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "帮助主题(&H)",                ID_HELP_FINDER
+        MENUITEM "关于 TypingTest(&A)...",      ID_APP_ABOUT
+    END
+END
+
+CG_IDR_POPUP_TYPING_TEST_VIEW MENU DISCARDABLE 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "英文练习\tCtrl+E",            ID_TEST_ENGLISH
+        MENUITEM "中文测试\tCtrl+C",            ID_TEST_CHINESE
+        MENUITEM SEPARATOR
+        MENUITEM "注销用户\tCtrl+L",            ID_USER_LOGOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "A",            ID_SCORE_UNION,         VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_TEST_CHINESE,        VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_USER_DEL,            VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_TEST_ENGLISH,        VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_HELP_FINDER,         VIRTKEY, CONTROL, NOINVERT
+    "K",            ID_CHANGE_KEY,          VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_USER_LOGOUT,         VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_USER_CREATE,         VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_SCORE_PERSONAL,      VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_TEST_STOP,           VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_APP_EXIT,            VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 TypingTest"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TypingTest 2.0 版",IDC_STATIC,55,7,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2009",IDC_STATIC,55,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "作者:韦一平",IDC_STATIC,53,40,119,8
+END
+
+IDD_DIALOG_LOGIN DIALOG DISCARDABLE  0, 0, 161, 88
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "打字测试系统"
+FONT 8, "System"
+BEGIN
+    GROUPBOX        "登录系统：",IDC_STATIC,13,7,127,53
+    ICON            IDI_KEY,IDC_STATIC,20,21,20,20
+    LTEXT           "用户代码：",IDC_STATIC,43,21,42,11
+    LTEXT           "用户密码：",IDC_STATIC,43,40,40,9
+    EDITTEXT        IDC_EIDT_USERID,86,20,46,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LOGINPASSWORD,86,40,46,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定(&Y)",IDOK,14,67,36,14
+    PUSHBUTTON      "取消(&C)",IDCANCEL,55,67,36,14
+    PUSHBUTTON      "注册用户(&N)",IDC_BUTTON_NEWUSER,94,67,48,14
+END
+
+IDD_DLGBAR DIALOG DISCARDABLE  0, 0, 494, 19
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "正确",IDC_STATIC,7,5,17,8
+    EDITTEXT        IDC_RIGHT,27,3,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WRONG,79,3,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RIGHT_PERCENT,137,3,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST_TIME,287,4,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST_FILE,372,4,115,12,ES_AUTOHSCROLL
+    LTEXT           "错误",IDC_STATIC,60,5,18,8
+    LTEXT           "正确率",IDC_STATIC,111,5,25,8
+    LTEXT           "测试时间",IDC_STATIC,251,5,32,8
+    LTEXT           "测试文件",IDC_STATIC,335,6,34,8
+    EDITTEXT        IDC_SPEED,219,3,24,12,ES_AUTOHSCROLL
+    LTEXT           "速度(分钟)",IDC_STATIC,177,5,40,9
+END
+
+IDD_NEW_USER DIALOG DISCARDABLE  0, 0, 181, 76
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "注册新用户"
+FONT 10, "System"
+BEGIN
+    LTEXT           "用户代码:",IDC_STATIC,7,7,35,9
+    LTEXT           "用户姓名:",IDC_STATIC,7,23,35,9
+    LTEXT           "用户密码:",IDC_STATIC,7,40,35,9
+    LTEXT           "确认密码:",IDC_STATIC,100,39,35,9
+    EDITTEXT        IDC_NEWUSER_ID,47,7,44,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "检测代码是否已使用",IDC_NEW_ID_TEST,97,7,77,12
+    EDITTEXT        IDC_NEWUSER_NAME,47,22,44,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NEWUSER_KEY,47,38,44,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_NEWUSER_KEYY,139,37,35,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确认",IDOK,38,55,50,14
+    PUSHBUTTON      "取消",IDCANCEL,100,55,50,14
+END
+
+IDD_DIALOG_FINDSCORE DIALOG DISCARDABLE  0, 0, 288, 165
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查询成绩..."
+FONT 8, "System"
+BEGIN
+    CONTROL         "List1",IDC_LIST_SCORE,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,1,0,285,162
+END
+
+IDD_DIALOG_CHANGEKEY DIALOG DISCARDABLE  0, 0, 94, 48
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改密码"
+FONT 8, "System"
+BEGIN
+    LTEXT           "新的密码:",IDC_STATIC,4,3,38,8
+    LTEXT           "密码确认:",IDC_STATIC,4,19,38,8
+    EDITTEXT        IDC_EDIT_KEYNEW,43,2,45,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_KEYOK,43,18,45,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确认",IDOK,10,33,30,11
+    PUSHBUTTON      "取消",IDCANCEL,52,34,28,10
+END
+
+IDD_DIALOG_DELUSER DIALOG DISCARDABLE  0, 0, 320, 172
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "删除用户"
+FONT 8, "System"
+BEGIN
+    DEFPUSHBUTTON   "删除",ID_USER_DEL,104,156,50,14
+    PUSHBUTTON      "取消",IDCANCEL,196,156,50,14
+    CONTROL         "List1",IDC_LIST_USER,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,1,11,316,59
+    CONTROL         "List2",IDC_LIST_SCORE,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,1,84,316,66
+    LTEXT           "用户信息",IDC_STATIC,1,1,46,8
+    LTEXT           "成绩信息",IDC_STATIC,1,73,50,11
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "TypingTest Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "TypingTest\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2006\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "TypingTest.EXE\0"
+            VALUE "ProductName", "TypingTest 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 154
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 81
+    END
+
+    IDD_DLGBAR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 487
+    END
+
+    IDD_NEW_USER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 174
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_DIALOG_FINDSCORE, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 286
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_DIALOG_CHANGEKEY, DIALOG
+    BEGIN
+        RIGHTMARGIN, 92
+        BOTTOMMARGIN, 46
+    END
+
+    IDD_DIALOG_DELUSER, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 317
+        BOTTOMMARGIN, 170
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "TypingTest\n打字测试系统\nTypingTest \n\n\nTypingTest.Document\nTypingTest Document"
+    ID_INDICATOR_DATE       "2006.12.12"
+    ID_SEPARATOR_NOTE       "就绪                                                                                                                              "
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "TypingTest"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+    ID_HELP_FINDER          "启用帮助文件,获得更多帮助"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "练习 , 测试您的英文打字速度\n英文练习"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TEST_ENGLISH         " 测试您的英文打字速度\n英文测试"
+    ID_TEST_CHINESE         " 测试您的中文打字速度\n中文测试"
+    ID_USER_CREATE          "建立一个新用户,并以新用户登录\n新建用户"
+    ID_CHANGE_KEY           "用户修改密码/n修改密码"
+    ID_USER_LOGOUT          "注销当前用户,选择一个新的用户登录\n注销"
+    ID_SCORE_PERSONAL       "查询个人的练习,测试成绩\n查询个人记录"
+    ID_SCORE_UNION          "查询团体的练习,测试成绩\n查询团体记录"
+    ID_MENUITEM32778        "清除个人的所有练习,测试成绩\n清除个人成绩"
+    ID_USER_DEL             "清除用户极其所有练习,测试成绩\n删除用户"
+    ID_INDICATOR_TIME       "00-00-00  "
+    ID_INDICATOR_USERNAME   "测试人:唯一人 "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TEST_STOP            "停止测试\n停止"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\TypingTest.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

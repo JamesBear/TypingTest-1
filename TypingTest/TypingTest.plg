@@ -1,0 +1,70 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TypingTest - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/TypingTest.res" /d "NDEBUG" /d "_AFXDLL" "E:\kl\ResourceCode\ch10\TypingTest.rc"" 
+Creating temporary file "C:\Users\wyp\AppData\Local\Temp\RSPC644.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/TypingTest.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\kl\ResourceCode\ch10\ChangeKey.cpp"
+"E:\kl\ResourceCode\ch10\CreateNewUser.cpp"
+"E:\kl\ResourceCode\ch10\DeleteUser.cpp"
+"E:\kl\ResourceCode\ch10\FindScore.cpp"
+"E:\kl\ResourceCode\ch10\LoginDlg.cpp"
+"E:\kl\ResourceCode\ch10\MainFrm.cpp"
+"E:\kl\ResourceCode\ch10\TypingTest.cpp"
+"E:\kl\ResourceCode\ch10\TypingTestDoc.cpp"
+"E:\kl\ResourceCode\ch10\TypingTestView.cpp"
+]
+Creating command line "cl.exe @C:\Users\wyp\AppData\Local\Temp\RSPC644.tmp" 
+Creating temporary file "C:\Users\wyp\AppData\Local\Temp\RSPC645.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/TypingTest.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\kl\ResourceCode\ch10\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\wyp\AppData\Local\Temp\RSPC645.tmp" 
+Creating temporary file "C:\Users\wyp\AppData\Local\Temp\RSPC646.tmp" with contents
+[
+HtmlHelp.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/TypingTest.pdb" /machine:I386 /out:"Release/TypingTest.exe" 
+.\Release\ChangeKey.obj
+.\Release\CreateNewUser.obj
+.\Release\DeleteUser.obj
+.\Release\FindScore.obj
+.\Release\LoginDlg.obj
+.\Release\MainFrm.obj
+.\Release\StdAfx.obj
+.\Release\TypingTest.obj
+.\Release\TypingTestDoc.obj
+.\Release\TypingTestView.obj
+.\Release\TypingTest.res
+]
+Creating command line "link.exe @C:\Users\wyp\AppData\Local\Temp\RSPC646.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+e:\kl\resourcecode\ch10\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Compiling...
+ChangeKey.cpp
+CreateNewUser.cpp
+DeleteUser.cpp
+FindScore.cpp
+LoginDlg.cpp
+MainFrm.cpp
+TypingTest.cpp
+TypingTestDoc.cpp
+TypingTestView.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+TypingTest.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>
